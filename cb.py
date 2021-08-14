@@ -129,7 +129,7 @@ def run():
 
 def main():
     while True:
-        now_hour = time.strftime("%H", time.localtime())
+        now_hour = int(time.strftime("%H", time.localtime()))
         interval_sec = random.randint(200, 300)
         if now_hour >= 21 or now_hour <= 8:
             interval_sec = random.randint(40, 60)
