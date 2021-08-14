@@ -32,7 +32,7 @@ URL = 'https://medium.com/_/api/collections/c114225aeaf7/stream\?to\=\{timestamp
 def comm():
     clock = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()) 
     file_name = 'cb_' + clock + '.html'
-    index = random.randint(0, len(USER_AGENT_LIST))
+    index = random.randint(0, len(USER_AGENT_LIST)-1)
     commend = 'wget --user-agent=\"' + USER_AGENT_LIST[index] + '\" ' + URL + ' -qO ' + file_name
     print(commend)
     os.system(commend)

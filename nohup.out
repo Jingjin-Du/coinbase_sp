@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "cb.py", line 140, in <module>
+    main()
+  File "cb.py", line 137, in main
+    run()
+  File "cb.py", line 108, in run
+    file_name = comm()
+  File "cb.py", line 36, in comm
+    commend = 'wget --user-agent=\"' + USER_AGENT_LIST[index] + '\" ' + URL + ' -qO ' + file_name
+IndexError: list index out of range

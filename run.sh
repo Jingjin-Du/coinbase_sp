@@ -1,2 +1,2 @@
 
-python cb.py > cb.out
+setsid python cb.py > cb.out
