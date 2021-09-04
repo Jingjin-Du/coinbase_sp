@@ -34,7 +34,7 @@ def comm():
     file_name = 'cb_' + clock + '.html'
     index = random.randint(0, len(USER_AGENT_LIST)-1)
     commend = 'wget --user-agent=\"' + USER_AGENT_LIST[index] + '\" ' + URL + ' -qO ' + file_name
-    print(commend)
+    #print(commend)
     os.system(commend)
     return file_name
 
@@ -114,9 +114,9 @@ def run():
     os.remove(file_name)
     ori_coins = get_ori_coins()
     new_coins = get_new_coin(coins, ori_coins)
-    print(coins)
-    print(ori_coins)
-    print(new_coins)
+    #print(coins)
+    #print(ori_coins)
+    #print(new_coins)
     now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     if len(new_coins) > 0:
         update_coins(coins)
